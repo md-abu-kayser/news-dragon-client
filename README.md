@@ -38,7 +38,6 @@
 
 [![Vite](https://img.shields.io/badge/Vite-646cff?logo=vite&logoColor=white)](https://vite.dev/)
 
-
 ## Plain docs links
 
 - HTML (MDN) docs: [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -151,15 +150,11 @@ Run locally with Vite (instructions below) to preview the app during development
 
 These endpoints are expected from your backend. Adapt URLs or environment variables as needed.
 
----
-
 ## Architecture Notes
 
 - route loaders provide server data to pages via `useLoaderData()` (see [`Category`](src/pages/Home/Category/Category.tsx) and [`News`](src/pages/News/News/News.tsx))
 - `AuthProvider` centralizes auth state for the UI (`NavigationBar` uses it to render user icon)
 - Types (`News`, `Category`) ensure consistent data shapes across components
-
----
 
 ### Recommended Improvements
 
@@ -167,8 +162,6 @@ These endpoints are expected from your backend. Adapt URLs or environment variab
 - Implement real Firebase Auth flows in [`AuthProvider`](src/providers/AuthProvider.tsx).
 - Add unit and integration tests (React Testing Library + Vitest).
 - Add CI workflow to run linting and type-checks.
-
----
 
 ## Contributing
 
@@ -194,5 +187,3 @@ Contributions welcome - follow standard PR workflow, keep commits focused, and a
 If you’d like this README tailored for a specific purpose - such as **hiring managers**, **open-source contributors**, or **client deliverables** - feel free to request a custom tone or format.
 
 **Thank you for reviewing this project!**
-
----
